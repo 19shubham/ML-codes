@@ -1,0 +1,42 @@
+In this project "Iris Flower" dataset is used.The dataset contains 150 observations of iris flowers. There are four columns of measurements of the flowers in centimeters. The fifth column is the species of the flower observed. All observed flowers belong to one of three species.
+
+After all import and loading we finally divided dataset into two part for training and for testing.80% of dataset was used to train our models and 20% was used as a validation dataset.
+
+We had used 6 different models to check our dataset.They are-
+1.Logistic Regression (LR)
+2.Linear Discriminant Analysis (LDA)
+3.K-Nearest Neighbors (KNN).
+4.Classification and Regression Trees (CART).
+5.Gaussian Naive Bayes (NB).
+6.Support Vector Machines (SVM).
+
+we got output as
+
+LR: 0.966667 (0.040825)
+LDA: 0.975000 (0.038188)
+KNN: 0.983333 (0.033333)
+CART: 0.975000 (0.038188)
+NB: 0.975000 (0.053359)
+SVM: 0.981667 (0.025000)
+
+We can see that it looks like KNN has the largest estimated accuracy score.
+Now we has tested KNN model directly on our validation dataset and summarize the results as a final accuracy score, a confusion matrix and a classification report.
+
+
+0.9
+ 
+[[ 7  0  0]
+ [ 0 11  1]
+ [ 0  2  9]]
+ 
+             precision    recall  f1-score   support
+ 
+Iris-setosa       1.00      1.00      1.00         7
+Iris-versicolor   0.85      0.92      0.88        12
+Iris-virginica    0.90      0.82      0.86        11
+ 
+avg / total       0.90      0.90      0.90        30
+
+We can see that the accuracy is 0.9 or 90%.
+
+This completed our analysis of finding best suitable model for our dataset.
